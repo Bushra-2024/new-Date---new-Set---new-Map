@@ -197,3 +197,62 @@ These methods change specific parts of the `Date` object.
 
 ---
 
+
+# new Map
+a **Map** is a collection that stores **key-value pairs**. Unlike regular objects, **keys** in a Map can be of any type—whether primitive values like strings, numbers, or even objects and arrays. The **value** associated with each key can also be anything.
+
+### Key Features:
+1. **Insertion Order**: 
+   - In a **regular object**, the keys don't guarantee insertion order. However, in a **Map**, the keys are stored in the order they were added, which makes it predictable when you loop through them.
+   
+2. **Key Types**:
+   - In a **regular object**, the keys must be **strings** or **symbols**. For example, you can't use an array or object as a key.
+   - In a **Map**, keys can be of **any type**, including **strings**, **numbers**, **objects**, and even **arrays**. This gives you more flexibility.
+
+3. **Size**:
+   - In a **regular object**, there is no direct way to get the number of keys. You have to use `Object.keys(obj).length` to get the count.
+   - In a **Map**, you can use the `size` property to easily get the number of key-value pairs.
+
+4. **Accessing Values**:
+   - In a **regular object**, you access values using square brackets, dot notation and destructuring:
+     ```javascript 
+     let obj = { name: "John", age: 25 };
+     console.log(obj.name);  // Output: John
+     console.log(obj["age"]); // Output: 25
+     ```
+   - In a **Map**, you use the `get()` method to access values:
+     ```javascript
+     let map = new Map();
+     map.set("name", "John");
+     console.log(map.get("name"));  // Output: John
+     ```
+
+### Syntax:
+- **Regular Object**:
+  ```javascript
+  let obj = { "key1": "value1", "key2": "value2" };
+  ```
+  
+- **Map**:
+  ```javascript
+  let map = new Map([["key1", "value1"], ["key2", "value2"]]);
+  ```
+
+### Methods
+
+- **`new Map()`**: Creates a new empty Map object.
+
+- **`set(key, value)`**: Adds a new key-value pair to the Map or updates the value if the key already exists.
+  
+- **`get(key)`**: Retrieves the value associated with the specified key. If the key does not exist, it returns `undefined`.
+
+- **`delete(key)`**: Removes the key-value pair associated with the given key from the Map. Returns `true` if the key was found and deleted, or `false` if the key wasn't found.
+
+- **`has(key)`**: Checks if the Map contains the specified key. Returns `true` if the key exists, and `false` otherwise.
+
+- **`forEach(callback)`**: Executes a provided function once for each key-value pair in the Map, in insertion order.
+
+- **`entries()`**: Returns an iterator object containing an array of `[key, value]` pairs for each element in the Map.
+
+- **`size`**: Returns the number of key-value pairs in the Map.
+
