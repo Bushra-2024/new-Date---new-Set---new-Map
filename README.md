@@ -262,16 +262,16 @@ a **Map** is a collection that stores **key-value pairs**. Unlike regular object
 A **Set** is a collection of unique values in JavaScript. It allows you to store any type of values (like numbers, strings, objects, etc.), but **each value must be unique**—no duplicates are allowed.
 
 ### Methods 
-- `**new Set()**`: Creates a new empty Set object.
+- **`new Set()`**: Creates a new empty Set object.
   
-- `**add(value)**`: Adds a new value to the Set. If the value already exists, it won't be added again (Sets automatically ignore duplicates).
+- **`add(value)`**: Adds a new value to the Set. If the value already exists, it won't be added again (Sets automatically ignore duplicates).
 
-- `**has(value)**`: Checks if the Set contains the specified value. Returns `true` if the value exists, otherwise `false`.
+- **`has(value)`**: Checks if the Set contains the specified value. Returns `true` if the value exists, otherwise `false`.
 
-- `**delete(value)**`: Removes the specified value from the Set. Returns `true` if the value was successfully removed, otherwise `false`.
+- **`delete(value)`**: Removes the specified value from the Set. Returns `true` if the value was successfully removed, otherwise `false`.
 
-- `**forEach(callback)**`: Executes a provided function once for each value in the Set, in the insertion order.
+- **`forEach(callback)`**: Executes a provided function once for each value in the Set, in the insertion order.
 
-- `**values()**`: Returns a new Iterator object that contains all the values in the Set in insertion order. (Similar to `entries()` in Maps, but only for values.)
+- **`values()`**: Returns a new Iterator object that contains all the values in the Set in insertion order. (Similar to `entries()` in Maps, but only for values.)
 
-- `**size**`: A property that returns the number of values in the Set.
+- **`size`**: A property that returns the number of values in the Set.
